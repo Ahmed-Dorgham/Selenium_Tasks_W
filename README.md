@@ -1,5 +1,5 @@
 # seleniumFramework using :
 
 - Java 
--testNG
--Maven
+- testNG
+- Maven
