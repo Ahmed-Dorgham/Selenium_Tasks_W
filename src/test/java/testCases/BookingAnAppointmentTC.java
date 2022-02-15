@@ -21,6 +21,7 @@ public class BookingAnAppointmentTC extends TestBase{
 
 	@Test(priority = 1)
 	
+	
 	public void bookAnAppointment_1 () throws InterruptedException
 	{
 		systemHomepageObject= new SystemHomePagePage(driver);
