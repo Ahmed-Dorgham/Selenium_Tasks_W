@@ -12,7 +12,7 @@
 
 	<name>Virtual_Clinic</name>
 	<url>http://www.example.com</url>
-
+	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
@@ -20,7 +20,7 @@
 	</properties>
 	<build>
 
-		<plugins>
+ 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>

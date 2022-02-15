@@ -3,8 +3,8 @@
 <suite name="Suite">
 	<parameter name="browser" value="chrome"></parameter>
 	<test thread-count="5" name="Test" preserve-order = "true" >
+	
 		<classes>
-
 			<class name="testCases.BookingAnAppointmentTC" />
 		</classes>
 	</test>

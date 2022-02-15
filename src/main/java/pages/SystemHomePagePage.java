@@ -14,7 +14,7 @@ public class SystemHomePagePage extends PageBase{
 	WebElement joinNowButton ;
 	
 	@FindBy (id = "dc-loginbtn")
-	WebElement loginButton ;
+	public WebElement loginButton ;
 	
 	@FindBy (id = "email")
 	WebElement emailField ;

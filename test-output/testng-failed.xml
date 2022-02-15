@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.BookingAnAppointmentTC">
+      <class name="testCases.LoginAsPatientTC">
         <methods>
+          <include name="LoginAsPatient"/>
           <include name="takeScreenshotOnFailure"/>
-          <include name="bookAnAppointment_2"/>
-          <include name="bookAnAppointment_1"/>
           <include name="startDriver"/>
         </methods>
-      </class> <!-- testCases.BookingAnAppointmentTC -->
+      </class> <!-- testCases.LoginAsPatientTC -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
