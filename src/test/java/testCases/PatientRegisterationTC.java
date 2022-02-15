@@ -10,6 +10,7 @@ public class PatientRegisterationTC extends TestBase{
 	
 	SystemHomePagePage homePageObject;
 	PatientRegisterationPage PatientRegisterationPageObject;
+	
 	@Test
 	public void patientRegisterWithValidData ()
 	{

@@ -22,8 +22,15 @@ public class PatientHomePagePage extends PageBase {
 	@FindBy (className  = "dc-userlogedin")
 	public  WebElement hover ;
 	
-	@FindBy (css = "a[href='http://virual-clinic.azurewebsites.net/public/patient/dashboard']")
+	@FindBy (css = "a[href='http://virual-clinic.azurewebsites.net/public/patient/dashboard']")  
 	WebElement dashBoardTab ;
+	
+	@FindBy (css = "a[href='http://virual-clinic.azurewebsites.net/public/logout']")
+	
+	WebElement logoutTab ;
+	
+	
+	
 	
 	@FindBy (linkText   = "Our Doctors")
 	 private WebElement ourDoctorsButton ;
@@ -37,7 +44,12 @@ public class PatientHomePagePage extends PageBase {
 	   wait.until(ExpectedConditions.presenceOfElementLocated(By.className("ti-settings")));
 		clickButton(dashBoardTab);
 	}
-
+	public void logout () throws InterruptedException 
+	{
+		action.moveToElement(hover).build().perform();	
+	   wait.until(ExpectedConditions.presenceOfElementLocated(By.className("lnr-exit")));
+		clickButton(logoutTab);
+	}
 	public void openOurDoctorsPage ()
 	{
 		clickButton(ourDoctorsButton);

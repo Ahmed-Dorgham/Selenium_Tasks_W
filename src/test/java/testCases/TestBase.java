@@ -15,8 +15,11 @@ import org.testng.annotations.Parameters;
 import Utilities.Helper;
 
 public class TestBase {
+	
+	
 	public   WebDriver driver;
-
+	public String patientEmail = "";
+	public String patientPassword = "";
 	@BeforeClass
 	@Parameters (("browser"))
 	public void startDriver (@Optional ("chrome") String browserName)

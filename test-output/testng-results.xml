@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
@@ -8,6 +9,17 @@
     <test started-at="2022-02-15T21:14:16 EET" name="Default test" finished-at="2022-02-15T21:14:57 EET" duration-ms="40966">
       <class name="testCases.LoginAsPatientTC">
         <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:testCases.LoginAsPatientTC@ffaa6af]" started-at="2022-02-15T21:14:17 EET" name="startDriver" finished-at="2022-02-15T21:14:33 EET" duration-ms="16376" status="PASS">
+=======
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-15T13:57:38 EET" name="Default suite" finished-at="2022-02-15T13:57:57 EET" duration-ms="19277">
+    <groups>
+    </groups>
+    <test started-at="2022-02-15T13:57:38 EET" name="Default test" finished-at="2022-02-15T13:57:57 EET" duration-ms="19277">
+      <class name="testCases.BookingAnAppointmentTC">
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:testCases.BookingAnAppointmentTC@67f639d3]" started-at="2022-02-15T13:57:38 EET" name="startDriver" finished-at="2022-02-15T13:57:44 EET" duration-ms="6298" status="PASS">
+>>>>>>> 06c53a6c0771e2574c8fe7d8b60e04b3dea59fd6
           <params>
             <param index="0">
               <value>
@@ -18,6 +30,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
+<<<<<<< HEAD
         <test-method signature="LoginAsPatient()[pri:0, instance:testCases.LoginAsPatientTC@ffaa6af]" started-at="2022-02-15T21:14:33 EET" name="LoginAsPatient" finished-at="2022-02-15T21:14:45 EET" duration-ms="12262" status="FAIL">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
@@ -178,6 +191,39 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
       </class> <!-- testCases.LoginAsPatientTC -->
+=======
+        <test-method signature="bookAnAppointment_1()[pri:1, instance:testCases.BookingAnAppointmentTC@67f639d3]" started-at="2022-02-15T13:57:44 EET" name="bookAnAppointment_1" finished-at="2022-02-15T13:57:55 EET" duration-ms="11032" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookAnAppointment_1 -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:testCases.BookingAnAppointmentTC@67f639d3]" started-at="2022-02-15T13:57:55 EET" name="takeScreenshotOnFailure" finished-at="2022-02-15T13:57:55 EET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=bookAnAppointment_1 status=SUCCESS method=BookingAnAppointmentTC.bookAnAppointment_1()[pri:1, instance:testCases.BookingAnAppointmentTC@67f639d3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method signature="bookAnAppointment_2()[pri:2, instance:testCases.BookingAnAppointmentTC@67f639d3]" started-at="2022-02-15T13:57:55 EET" name="bookAnAppointment_2" finished-at="2022-02-15T13:57:57 EET" depends-on-methods="testCases.BookingAnAppointmentTC.bookAnAppointment_1" duration-ms="1919" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookAnAppointment_2 -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:testCases.BookingAnAppointmentTC@67f639d3]" started-at="2022-02-15T13:57:57 EET" name="takeScreenshotOnFailure" finished-at="2022-02-15T13:57:57 EET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=bookAnAppointment_2 status=SUCCESS method=BookingAnAppointmentTC.bookAnAppointment_2()[pri:2, instance:testCases.BookingAnAppointmentTC@67f639d3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+      </class> <!-- testCases.BookingAnAppointmentTC -->
+>>>>>>> 06c53a6c0771e2574c8fe7d8b60e04b3dea59fd6
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

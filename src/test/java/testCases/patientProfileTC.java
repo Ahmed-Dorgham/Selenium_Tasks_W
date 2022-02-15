@@ -15,8 +15,6 @@ public class patientProfileTC extends TestBase{
 	PatientHomePagePage patientPageObject ;
 	PatientDashboardPage PatientDashboardObject;
 	PatientProfilePage PatientProfilePageObject;
-	String patientEmail = "abdullah@disbox.net";
-	String patientPassword = "123456789A";
 	private String filePath = "Windows+Setup+Instructions.pdf";
 	@Test
 	public void openPatientProfile() throws InterruptedException, AWTException
