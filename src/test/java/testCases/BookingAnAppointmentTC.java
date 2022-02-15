@@ -16,9 +16,7 @@ public class BookingAnAppointmentTC extends TestBase{
 	DoctorPage doctorPageObject;
 	BookingWindowsPage bookingWindowsPageObject;
 	PatientDashboardPage PatientDashboardObject;
-	String patientEmail = "";
-	String patientPassword = "";
-
+	
 	@Test(priority = 1)
 	
 	

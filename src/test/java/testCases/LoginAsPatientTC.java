@@ -12,8 +12,6 @@ public class LoginAsPatientTC  extends TestBase{
 	SystemHomePagePage systemHomepageObject ; 
 	PatientHomePagePage patientPageObject ;
 	PatientDashboardPage PatientDashboardObject;
-	String patientEmail = "abdullah@disbox.net";
-	String patientPassword = "123456789A"; 
 	
 	
 	@Test

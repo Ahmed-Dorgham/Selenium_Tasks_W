@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.LoginAsPatientTC">
+      <class name="testCases.patientProfileTC">
         <methods>
-          <include name="LoginAsPatient"/>
           <include name="takeScreenshotOnFailure"/>
+          <include name="openPatientProfile"/>
           <include name="startDriver"/>
         </methods>
-      </class> <!-- testCases.LoginAsPatientTC -->
+      </class> <!-- testCases.patientProfileTC -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
