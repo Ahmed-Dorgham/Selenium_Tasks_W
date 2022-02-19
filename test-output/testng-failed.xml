@@ -3,24 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
       <class name="testCases.LoginAsPatientTC">
-=======
-      <class name="testCases.patientProfileTC">
->>>>>>> 06c53a6c0771e2574c8fe7d8b60e04b3dea59fd6
         <methods>
-          <include name="LoginAsPatient"/>
-          <include name="takeScreenshotOnFailure"/>
-<<<<<<< HEAD
+          <include name="LoginAsPatient" invocation-numbers="1 2 3"/>
+          <include name="closeDriver"/>
           <include name="startDriver"/>
         </methods>
       </class> <!-- testCases.LoginAsPatientTC -->
-=======
-          <include name="openPatientProfile"/>
-          <include name="startDriver"/>
-        </methods>
-      </class> <!-- testCases.patientProfileTC -->
->>>>>>> 06c53a6c0771e2574c8fe7d8b60e04b3dea59fd6
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

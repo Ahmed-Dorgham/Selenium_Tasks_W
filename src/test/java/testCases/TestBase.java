@@ -9,6 +9,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
@@ -20,7 +21,7 @@ public class TestBase {
 	public   WebDriver driver;
 	public String patientEmail = "";
 	public String patientPassword = "";
-	@BeforeClass
+	@BeforeMethod
 	@Parameters (("browser"))
 	public void startDriver (@Optional ("chrome") String browserName)
 	{
@@ -35,21 +36,21 @@ public class TestBase {
 		driver.navigate().to("http://virual-clinic.azurewebsites.net/public/");
 	}
 		
-	@AfterMethod
-	public void takeScreenshotOnFailure (ITestResult result) throws IOException
-{
-		if (result.getStatus()== ITestResult.FAILURE)
-		{
-			System.out.println("Failed!!");
-			System.out.println("Taking Screenshot.......");
-			Helper.takeScreenshot(driver,result.getName());
-		}
-	}
-	
-//	@AfterClass
-//	
-//	public void closeDriver ()
-//	{
-//	driver.quit();
+//	@AfterMethod
+//	public void takeScreenshotOnFailure (ITestResult result) throws IOException
+//{
+//		if (result.getStatus()== ITestResult.FAILURE)
+//		{
+//			System.out.println("Failed!!");
+//			System.out.println("Taking Screenshot.......");
+//			Helper.takeScreenshot(driver,result.getName());
+//		}
 //	}
+	
+	@AfterMethod
+	
+	public void closeDriver ()
+	{
+	driver.quit();
+	}
 }
